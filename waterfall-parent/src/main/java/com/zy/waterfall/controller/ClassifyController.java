@@ -1,16 +1,14 @@
-package com.zy.waterfall.waterfallparent.controller;
+package com.zy.waterfall.controller;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.zy.waterfall.waterfallparent.common.pojo.Classify;
-import com.zy.waterfall.waterfallparent.common.result.Result;
-import com.zy.waterfall.waterfallparent.service.ClassifyService;
+import com.zy.waterfall.service.ClassifyService;
+import com.zy.waterfall.common.entity.Classify;
+import com.zy.waterfall.common.result.Result;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.nio.file.Path;
 import java.util.List;
 
 /**

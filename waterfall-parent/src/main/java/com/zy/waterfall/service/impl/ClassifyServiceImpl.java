@@ -1,11 +1,10 @@
-package com.zy.waterfall.waterfallparent.service.impl;
+package com.zy.waterfall.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.zy.waterfall.waterfallparent.common.pojo.Classify;
-import com.zy.waterfall.waterfallparent.mapper.ClassifyMapper;
-import com.zy.waterfall.waterfallparent.service.ClassifyService;
+import com.zy.waterfall.mapper.ClassifyMapper;
+import com.zy.waterfall.service.ClassifyService;
+import com.zy.waterfall.common.entity.Classify;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

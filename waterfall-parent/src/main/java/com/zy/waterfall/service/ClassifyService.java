@@ -1,7 +1,7 @@
-package com.zy.waterfall.waterfallparent.service;
+package com.zy.waterfall.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zy.waterfall.waterfallparent.common.pojo.Classify;
+import com.zy.waterfall.common.entity.Classify;
 
 import java.util.List;
 

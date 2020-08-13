@@ -1,4 +1,4 @@
-package com.zy.waterfall.waterfallparent.swagger;
+package com.zy.waterfall.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

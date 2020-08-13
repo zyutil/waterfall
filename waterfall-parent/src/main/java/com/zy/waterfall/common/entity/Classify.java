@@ -1,10 +1,10 @@
-package com.zy.waterfall.waterfallparent.common.pojo;
+package com.zy.waterfall.common.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+
+import java.time.LocalDateTime;
 
 /**
  * @author at
@@ -22,4 +22,10 @@ public class Classify {
     private String name;
 
     private Integer parentId;
+
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private String createrPerson;
+
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private LocalDateTime createrTime;
 }

@@ -1,4 +1,4 @@
-package com.zy.waterfall.waterfallparent.common.result;
+package com.zy.waterfall.common.result;
 
 public enum CommonExceptionEnum {
 

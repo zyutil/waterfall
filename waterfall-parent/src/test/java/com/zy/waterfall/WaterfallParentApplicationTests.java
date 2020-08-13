@@ -1,4 +1,4 @@
-package com.zy.waterfall.waterfallparent;
+package com.zy.waterfall;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

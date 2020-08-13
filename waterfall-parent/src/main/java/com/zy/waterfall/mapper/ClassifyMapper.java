@@ -1,7 +1,7 @@
-package com.zy.waterfall.waterfallparent.mapper;
+package com.zy.waterfall.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zy.waterfall.waterfallparent.common.pojo.Classify;
+import com.zy.waterfall.common.entity.Classify;
 
 public interface ClassifyMapper extends BaseMapper<Classify> {
 }
