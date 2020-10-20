@@ -1,22 +1,21 @@
 package com.zy.waterfall.common.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * <p>
- *
+ *  标签
  * </p>
  *
- * @author Mht
+ * @author wzy
  * @since 2020-08-13
  */
-
+@Data
 @TableName("tag")
 public class Tag extends Model<Tag> {
 
@@ -33,55 +32,10 @@ public class Tag extends Model<Tag> {
      */
     private String name;
 
-    private String creater_person;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private String createrPerson;
 
-    private LocalDateTime creater_time;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private LocalDateTime createrTime;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCreater_person() {
-        return creater_person;
-    }
-
-    public void setCreater_person(String creater_person) {
-        this.creater_person = creater_person;
-    }
-
-    public LocalDateTime getCreater_time() {
-        return creater_time;
-    }
-
-    public void setCreater_time(LocalDateTime creater_time) {
-        this.creater_time = creater_time;
-    }
-
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
-    }
-
-    @Override
-    public String toString() {
-        return "Tag{" +
-        "id=" + id +
-        ", name=" + name +
-        ", creater_person=" + creater_person +
-        ", creater_time=" + creater_time +
-        "}";
-    }
 }

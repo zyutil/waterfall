@@ -39,7 +39,7 @@ public class MpGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        gc.setAuthor("Mht");
+        gc.setAuthor("Wzy");
         gc.setOutputDir("E:\\java\\boke\\springboot\\git\\waterfall\\waterfall\\waterfall-parent\\src\\main\\java");
         gc.setFileOverride(false);// 是否覆盖同名文件，默认是false
         gc.setActiveRecord(true);// 不需要ActiveRecord特性的请改为false
@@ -82,7 +82,7 @@ public class MpGenerator {
         // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
         strategy.setTablePrefix(new String[] { "" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.no_change);// 表名生成策略
-        strategy.setInclude(new String[] { "tag" }); // 需要生成的表
+        strategy.setInclude(new String[] { "article","article_body" }); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
         // 自定义实体父类
         // strategy.setSuperEntityClass("com.baomidou.demo.TestEntity");

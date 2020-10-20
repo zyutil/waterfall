@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 
 /**
+ * 分类
  * @author at
  * @Date 2020/8/12
  **/
@@ -24,7 +25,7 @@ public class Classify {
     private Integer parentId;
 
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private String createrPerson;
+    private String createrName;
 
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime createrTime;

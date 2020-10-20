@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zy.waterfall.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zy.waterfall.common.entity.Article">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="synopsis" property="synopsis" />
+        <result column="header_image" property="header_image" />
+        <result column="category_id" property="category_id" />
+        <result column="tag_ids" property="tag_ids" />
+        <result column="comment_count" property="comment_count" />
+        <result column="like_count" property="like_count" />
+        <result column="article_type" property="article_type" />
+        <result column="body_id" property="body_id" />
+        <result column="creater_name" property="creater_name" />
+        <result column="creater_time" property="creater_time" />
+        <result column="if_delete" property="if_delete" />
+        <result column="delete_time" property="delete_time" />
+        <result column="delete_name" property="delete_name" />
+        <result column="update_name" property="update_name" />
+        <result column="update_time" property="update_time" />
+    </resultMap>
+
+
+
+
+</mapper>

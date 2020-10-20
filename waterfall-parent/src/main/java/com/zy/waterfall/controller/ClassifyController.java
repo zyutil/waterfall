@@ -77,15 +77,14 @@ public class ClassifyController {
         log.info("the id is {}",id);
         QueryWrapper<Classify> queryWrapper = new QueryWrapper();
         queryWrapper.eq("parent_id",id);
-        List<Classify> classifyList = classifyService.list(queryWrapper);
-        log.info("the classifyList is {}",classifyList);
-        if (classifyList!=null&&classifyList.size()>0){
+        int count = classifyService.count(queryWrapper);
+        log.info("the classifyList count is {}",count);
+        if (count>0){
             return Result.error("该分类下有还有子分类，删除失败");
         }
         boolean b = classifyService.removeById(id);
         if (b)
             return Result.ok("删除成功");
         else return Result.error("删除失败");
-
     }
 }
